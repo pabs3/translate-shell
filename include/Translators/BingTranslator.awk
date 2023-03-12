@@ -6,9 +6,9 @@
 BEGIN { provides("bing") }
 
 function bingInit() {
-    HttpProtocol = "http://"
+    HttpProtocol = "https://"
     HttpHost = "www.bing.com"
-    HttpPort = 80
+    HttpPort = 443
 }
 
 # Set IG, IID, and BingTokenKey (a URL-encoded string containing token and key).

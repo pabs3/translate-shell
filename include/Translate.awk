@@ -66,7 +66,7 @@ function initHttpService(    inet) {
     if (Option["ip-version"])
         inet = inet Option["ip-version"]
     if (Option["proxy"]) {
-        match(Option["proxy"], /^(http:\/*)?(([^:]+):([^@]+)@)?([^\/]*):([^\/:]*)/, HttpProxySpec)
+        match(Option["proxy"], /^(https?:\/*)?(([^:]+):([^@]+)@)?([^\/]*):([^\/:]*)/, HttpProxySpec)
         HttpAuthUser = HttpProxySpec[3]
         HttpAuthPass = HttpProxySpec[4]
         HttpAuthCredentials = base64(unquote(HttpAuthUser) ":" HttpAuthPass)

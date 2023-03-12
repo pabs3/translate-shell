@@ -22,9 +22,9 @@ function yandexInit() {
     genSID() # generate a one-time key
     YandexWebTranslate = "z5h64q92x9.net" # host for web translation
 
-    HttpProtocol = "http://"
+    HttpProtocol = "https://"
     HttpHost = "translate.yandex.net"
-    HttpPort = 80
+    HttpPort = 443
 }
 
 function yandexRequestUrl(text, sl, tl, hl,    group) {
